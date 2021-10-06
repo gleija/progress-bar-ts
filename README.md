@@ -58,5 +58,5 @@ Without css-modules:
 document.querySelectorAll<HTMLElement>(`.circle`);
 ```
 
-2.- The initial load to DOM lements must be put inside a useEffect to ensure they are avaialble before render.
+2.- The initial load of DOM elements must be put inside a useEffect to ensure they are avaialble before render.
 useEffect with an empty dependencies array as a second argument, will ensure that the callback function will be called after the component renders for the first time.
