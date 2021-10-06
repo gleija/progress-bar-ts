@@ -1,7 +1,8 @@
 <div align="center" >
   <img src="progress-bar.gif" alt="progress bar" title="progress bar" width="600px" />
 </div>
-# Progress Bar example
+
+## Progress Bar example
 
 This small projects is a quick reference to show a progress bar. CSS courtesy of [Brad Traversy](https://github.com/bradtraversy).
 
@@ -44,3 +45,18 @@ $ yarn commmit
 ```
 
 ## Notes
+
+1.- When using css-modules we need to find the classes in DOM as follow:
+
+```bash
+document.querySelectorAll<HTMLElement>(`.${classes.circle}`);
+```
+
+Without css-modules:
+
+```bash
+document.querySelectorAll<HTMLElement>(`.circle`);
+```
+
+2.- The initial load to DOM lements must be put inside a useEffect to ensure they are avaialble before render.
+useEffect with an empty dependencies array as a second argument, will ensure that the callback function will be called after the component renders for the first time.
