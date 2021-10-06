@@ -1,7 +1,9 @@
 <div align="center" >
-  <img src="social.png" alt="firebase" title="firebase" width="600px" />
+  <img src="progress-bar.gif" alt="progress bar" title="progress bar" width="600px" />
 </div>
 # Progress Bar example
+
+This small projects is a quick reference to show a progress bar. CSS courtesy of [Brad Traversy](https://github.com/bradtraversy).
 
 ## Getting Started
 
